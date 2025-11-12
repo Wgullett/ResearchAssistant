@@ -1,8 +1,8 @@
-Gemini Research Assistant Notebook
+Research Assistant Notebook
 
 This Jupyter Notebook (ResearchAssistant.ipynb) provides an interactive and efficient way to perform grounded question answering based on provided documents or blocks of text.
 
-By leveraging the powerful Gemini API, the assistant reads external context (like research papers, articles, or meeting notes) and accurately answers specific questions, ensuring the response is directly supported by the provided source material.
+By leveraging the Mistral API, the assistant reads external context (like research papers, articles, or meeting notes) and accurately answers specific questions, ensuring the response is directly supported by the provided source material.
 
 Features
 
@@ -20,7 +20,7 @@ Before running the notebook, you will need the following:
 
 Python 3.8+
 
-A Gemini API Key. You can obtain one from Google AI Studio.
+A Mistral API Key. You can obtain one from Google AI Studio.
 
 Setup and Installation
 
@@ -45,7 +45,7 @@ For security and best practice, set your API key as an environment variable. In 
 
 If running locally (e.g., in VS Code or terminal):
 
-export GEMINI_API_KEY="YOUR_API_KEY_HERE"
+export MOSTRAL_API_KEY="YOUR_API_KEY_HERE"
 
 
 If running in Google Colab or Jupyter:
@@ -53,7 +53,7 @@ If running in Google Colab or Jupyter:
 You can run the following Python cell to set the key directly:
 
 import os
-os.environ['GEMINI_API_KEY'] = 'YOUR_API_KEY_HERE'
+os.environ['MISTRAL_API_KEY'] = 'YOUR_API_KEY_HERE'
 
 
 Usage
@@ -66,7 +66,7 @@ Step 2: Run Cells Sequentially
 
 Run each cell in the notebook. The workflow is generally as follows:
 
-Setup Cell: Imports libraries and initializes the Gemini client.
+Setup Cell: Imports libraries and initializes the Mistral client.
 
 Context Input Cell: This is where you paste or load your document/research material.
 
